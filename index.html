@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/adapt.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header animate__animated animate__fadeInDown">
+    <div class="container">
+      <img src="img/logo.png" alt="Логотип" class="logo">
+      <div class="header-container">
+        <div class="header-text">
+          <h1 class="animate__animated animate__fadeInLeft">
+            С помощью нас <br>
+            вы сможете создать то, о чем <br>
+            желаете!
+          </h1>
+          <p>
+            Наши технологии помогут Вам достичь <br>
+            огромных успехов. Мы верим в вас и знаем это на <br>
+            все 100%. Вас не остановить!
+          </p>
+          <button class="btn">Узнать больше...</button>
+        </div>
+        <div class="header-image">
+          <img src="img/header-img.png" alt="Приложение на телефоне" class="animate__animated animate__fadeInRight">
+        </div>
+      </div>
+    </div>
+</header>
+
+<section class="features">
+    <div class="container">
+      <h2 class="animate__animated animate__fadeInUp">Что Вам необходимо?</h2>
+      <div class="features-container">
+        <div class="feature-block">
+          <img src="img/f3.png" alt="Иконка 1">
+          <h3>Первый блок</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+        </div>
+        <div class="feature-block">
+          <img src="img/f4.png" alt="Иконка 2">
+          <h3>Второй блок</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+        </div>
+        <div class="feature-block">
+          <img src="img/f5.png" alt="Иконка 3">
+          <h3>Третий блок</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="order-form">
+  <div class="container">
+    <h2>Заказать продукт</h2>
+    <form id="productForm">
+      <input type="text" id="prodName" placeholder="Название продукта">
+      <input type="number" id="quantity" placeholder="Количество">
+      <input type="email" id="userEmail" placeholder="Email">
+      <input type="date" id="deliveryDate" placeholder="Дата доставки">
+      <button type="submit" class="btn">Оформить заказ</button>
+    </form>
+    <div id="productResult" style="margin-top: 15px; font-weight: bold;"></div>
+  </div>
+</section>
+
+<!-- ОБНОВЛЕНО: HTML5 валидация -->
+<section class="contact-form">
+  <div class="container">
+    <h2>Форма заказа обратного звонка</h2>
+    <form>
+      <input type="text" placeholder="Имя" required>
+      <input type="email" placeholder="Электронная почта" required>
+      <input type="tel" placeholder="Телефон" pattern="\+?[0-9\s\-]{10,}" required>
+      <textarea placeholder="Какие у вас пожелания?" required></textarea>
+      <button type="submit" class="btn">Отправить вопрос!</button>
+    </form>
+  </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+      <p>&copy; Все на этом сайте защищено</p>
+    </div>
+</footer>
+<script src="js/form-validation.js"></script>
+
+</body>
+</html>
